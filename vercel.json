@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    { "source": "/(.*)\\.glb", "headers": [
+      { "key": "Content-Type", "value": "model/gltf-binary" },
+      { "key": "Cache-Control", "value": "public, max-age=86400" } ] },
+    { "source": "/(music|covers|posters|cat)/(.*)", "headers": [
+      { "key": "Cache-Control", "value": "public, max-age=604800" } ] }
+  ]
+}
